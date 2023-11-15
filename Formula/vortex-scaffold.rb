@@ -12,6 +12,8 @@ class VortexScaffold < Formula
       puts file
     end
 
+    puts prefix
+
     prefix.install "modules"
     prefix.install "config.ini"
     prefix.install "run"
