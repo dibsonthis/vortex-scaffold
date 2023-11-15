@@ -5,6 +5,9 @@ class VortexScaffold < Formula
   sha256 "9fa55b424c43d709367ccd193403ec29ee2f9693a40535320c83f9f530d47d05"
 
   def install
+
+    puts "Current Working Directory: #{Dir.pwd}"
+    
     prefix.install "modules"
     prefix.install "config.ini"
     prefix.install "run"
