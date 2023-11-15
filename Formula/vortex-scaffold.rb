@@ -5,7 +5,7 @@ class VortexScaffold < Formula
   sha256 "9fa55b424c43d709367ccd193403ec29ee2f9693a40535320c83f9f530d47d05"
 
   def install
-    prefix.install Dir["output/*"]
+    prefix.install Dir["*"]
 
     Dir.entries(prefix).each do |file|
       puts file
