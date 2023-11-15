@@ -7,7 +7,11 @@ class VortexScaffold < Formula
   def install
 
     puts "Current Working Directory: #{Dir.pwd}"
-    
+
+    Dir.entries(Dir.pwd).each do |file|
+      puts file
+    end
+
     prefix.install "modules"
     prefix.install "config.ini"
     prefix.install "run"
