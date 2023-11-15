@@ -6,11 +6,6 @@ class VortexScaffold < Formula
 
   def install
     prefix.install Dir["*"]
-
-    Dir.entries(prefix).each do |file|
-      puts file
-    end
-
   end
 
   test do
