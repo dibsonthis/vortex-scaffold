@@ -8,7 +8,7 @@ class VortexScaffold < Formula
 
     puts "Current Working Directory: #{Dir.pwd}"
 
-    Dir.entries(Dir.pwd).each do |file|
+    Dir.entries(prefix).each do |file|
       puts file
     end
 
